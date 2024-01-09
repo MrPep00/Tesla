@@ -1,0 +1,80 @@
+@font-face {
+  font-family: logoFont;
+  src: url(../fonts/TESLA.ttf);
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(circle at 50% 50%, #fff, #d7dbdf);
+  font-family: Lato, sans-serif;
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  padding: 24px 18px 0;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  font-family: logoFont;
+  font-size: 28px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.car-box {
+  width: 290px;
+  height: 432px;
+  text-align: center;
+}
+
+.car-box_s {
+  background: #ffffff;
+}
+
+.car-box_x {
+  background: #73787d;
+  color: #ffffff;
+}
+
+.car-box_heading {
+  padding: 22px 0 19px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.car-box_heading_s {
+  background: #f8f9f9;
+}
+
+.car-box_heading_x {
+  background: #656a72;
+}
+
+.car-name {
+  text-transform: capitalize;
+  margin-bottom: 33px;
+}
+
+.car-img {
+  height: 54px;
+}
+
+.car-desc {
+  font-size: 14px;
+  line-height: 2.5;
+  width: 173px;
+  margin: 0 auto 23px;
+}
