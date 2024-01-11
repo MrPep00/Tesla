@@ -14,9 +14,18 @@ body {
   font-family: Lato, sans-serif;
 }
 
+button {
+  font-family: Lato, sans-serif;
+}
+
 .poster {
   display: flex;
   justify-content: center;
+  background-image: url(../images/motor-wireframe@3x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-bottom: 112px;
 }
 
 .header {
@@ -33,48 +42,127 @@ body {
   color: #ffffff;
 }
 
-.car-box {
+.poster__car-box {
   width: 290px;
-  height: 432px;
   text-align: center;
 }
 
-.car-box_s {
+.poster__car-box_s {
   background: #ffffff;
+  z-index: 2;
 }
 
-.car-box_x {
+.poster__car-box_x {
   background: #73787d;
   color: #ffffff;
+  position: relative;
+  top: 44px;
+  left: -34px;
 }
 
-.car-box_heading {
+.car-box__heading {
   padding: 22px 0 19px;
   margin-bottom: 25px;
-  font-size: 20px;
-  font-weight: normal;
 }
 
-.car-box_heading_s {
+.car-box__heading_s {
   background: #f8f9f9;
 }
 
-.car-box_heading_x {
+.car-box__heading_x {
   background: #656a72;
 }
 
-.car-name {
+.heading__name {
   text-transform: capitalize;
+  font-size: 30px;
+  font-weight: normal;
   margin-bottom: 33px;
 }
 
-.car-img {
+.heading__name_x::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 28px;
+  top: 70px;
+  left: 45%;
+  opacity: 0.3;
+  background: #ffffff;
+}
+
+.heading__name_s::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 28px;
+  top: 141px;
+  left: 35%;
+  opacity: 0.3;
+  background: #ffffff;
+}
+
+.heading__img {
   height: 54px;
 }
 
-.car-desc {
+.car-box__desc {
   font-size: 14px;
   line-height: 2.5;
   width: 173px;
-  margin: 0 auto 23px;
+  margin: 0 auto 43px;
+}
+
+.car-box__desc_x::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 28px;
+  left: 45%;
+  top: 68%;
+  opacity: 0.3;
+  background: #ffffff;
+}
+
+.car-box__desc_s::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 28px;
+  left: 35%;
+  top: 45%;
+  opacity: 0.3;
+  background: #ffffff;
+}
+
+.car-box__price {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+
+.car-box__price_s {
+  color: #60697d;
+}
+
+.car-box__price_x {
+  color: #ffffff;
+}
+
+.car-box__btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 18px;
+  background: transparent;
+  min-width: 126px;
+  height: 36px;
+  border: none;
+  margin-bottom: 36px;
+}
+.car-box__btn_red {
+  background: #ea525c;
+}
+
+.car-box__btn_blue {
+  background: #37406c;
 }
