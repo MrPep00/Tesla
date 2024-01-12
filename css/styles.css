@@ -42,17 +42,17 @@ button {
   color: #ffffff;
 }
 
-.poster__car-box {
+.car-box {
   width: 290px;
   text-align: center;
 }
 
-.poster__car-box_s {
+.car-box_s {
   background: #ffffff;
   z-index: 2;
 }
 
-.poster__car-box_x {
+.car-box_x {
   background: #73787d;
   color: #ffffff;
   position: relative;
