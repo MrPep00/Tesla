@@ -148,7 +148,7 @@ button {
   color: #ffffff;
 }
 
-.car-box__btn {
+.btn {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 14px;
@@ -159,10 +159,10 @@ button {
   border: none;
   margin-bottom: 36px;
 }
-.car-box__btn_red {
+.btn_red {
   background: #ea525c;
 }
 
-.car-box__btn_blue {
+.btn_blue {
   background: #37406c;
 }
