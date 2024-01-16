@@ -13,42 +13,49 @@
     <title>Tesla</title>
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
       <a href="/" class="logo">TESLA</a>
     </header>
     <main class="poster">
-      <div class="car-box car-box_s">
-        <div class="car-box__heading car-box__heading_s">
-          <h1 class="heading__name heading__name_s">model s</h1>
+      <div class="car-box car-box_primary">
+        <div class="car-box__header car-box__header_primary">
+          <h1 class="header__name">model s</h1>
+          <div class="divider"></div>
           <img
             src="./images/model-s@3x.png"
             alt="model-s"
-            class="heading__img"
+            class="header__img"
           />
         </div>
-        <p class="car-box__desc car-box__desc_s">
-          17” capacitive touchscreen Automatic keyless entry Traffic-aware
-          cruise control
-        </p>
-        <p class="car-box__price car-box__price_s">$575 /mo</p>
-        <button class="btn btn_red">order</button>
+        <div class="car-box__main">
+          <p class="car-box__desc car-box__desc_primary">
+            17” capacitive touchscreen Automatic keyless entry Traffic-aware
+            cruise control
+          </p>
+          <div class="divider"></div>
+          <p class="car-box__price car-box__price_primary">$575 /mo</p>
+          <button class="btn btn_primary">order</button>
+        </div>
       </div>
-      <div class="car-box car-box_x">
-        <div class="car-box__heading car-box__heading_x">
-          <h1 class="heading__name heading__name_x">model x</h1>
+      <div class="car-box car-box_secondary">
+        <div class="car-box__header car-box__header_secondary">
+          <h1 class="header__name">model x</h1>
+          <div class="divider"></div>
           <img
             src="./images/model-x@3x.png"
             alt="model-x"
-            class="heading__img"
+            class="header__img"
           />
         </div>
-
-        <p class="car-box__desc car-box__desc_x">
-          Digitally controlled motors Falcon Wing rear doors Dual Motor
-          All-Wheel Drive
-        </p>
-        <p class="car-box__price car-box__price_x">early 2016</p>
-        <button class="btn btn_blue">reserve</button>
+        <div class="car-box__main">
+          <p class="car-box__desc car-box__desc_secondary">
+            Digitally controlled motors Falcon Wing rear doors Dual Motor
+            All-Wheel Drive
+          </p>
+          <div class="divider"></div>
+          <p class="car-box__price car-box__price_secondary">early 2016</p>
+          <button class="btn btn_secondary">reserve</button>
+        </div>
       </div>
     </main>
   </body>

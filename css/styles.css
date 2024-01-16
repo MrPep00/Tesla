@@ -28,7 +28,7 @@ button {
   padding-bottom: 112px;
 }
 
-.header {
+.page-header {
   padding: 24px 18px 0;
   margin-bottom: 17px;
   display: flex;
@@ -45,64 +45,51 @@ button {
 .car-box {
   width: 290px;
   text-align: center;
+  padding-bottom: 36px;
 }
 
-.car-box_s {
+.car-box_primary {
   background: #ffffff;
   z-index: 2;
 }
 
-.car-box_x {
+.car-box_secondary {
   background: #73787d;
   color: #ffffff;
-  position: relative;
-  top: 44px;
-  left: -34px;
+  transform: translateX(-34px) translateY(44px);
 }
 
-.car-box__heading {
+.car-box__header {
   padding: 22px 0 19px;
   margin-bottom: 25px;
 }
 
-.car-box__heading_s {
+.divider {
+  width: 28px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.3;
+}
+
+.car-box__header .divider {
+  margin: 14px auto 17px;
+}
+
+.car-box__header_primary {
   background: #f8f9f9;
 }
 
-.car-box__heading_x {
+.car-box__header_secondary {
   background: #656a72;
 }
 
-.heading__name {
+.header__name {
   text-transform: capitalize;
   font-size: 30px;
   font-weight: normal;
-  margin-bottom: 33px;
 }
 
-.heading__name_x::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 28px;
-  top: 70px;
-  left: 45%;
-  opacity: 0.3;
-  background: #ffffff;
-}
-
-.heading__name_s::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 28px;
-  top: 141px;
-  left: 35%;
-  opacity: 0.3;
-  background: #ffffff;
-}
-
-.heading__img {
+.header__img {
   height: 54px;
 }
 
@@ -110,29 +97,11 @@ button {
   font-size: 14px;
   line-height: 2.5;
   width: 173px;
-  margin: 0 auto 43px;
+  margin: 0 auto;
 }
 
-.car-box__desc_x::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 28px;
-  left: 45%;
-  top: 68%;
-  opacity: 0.3;
-  background: #ffffff;
-}
-
-.car-box__desc_s::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 28px;
-  left: 35%;
-  top: 45%;
-  opacity: 0.3;
-  background: #ffffff;
+.car-box__main .divider {
+  margin: 23px auto 18px;
 }
 
 .car-box__price {
@@ -140,11 +109,11 @@ button {
   margin-bottom: 23px;
 }
 
-.car-box__price_s {
+.car-box__price_primary {
   color: #60697d;
 }
 
-.car-box__price_x {
+.car-box__price_secondary {
   color: #ffffff;
 }
 
@@ -156,12 +125,11 @@ button {
   min-width: 126px;
   height: 36px;
   border: none;
-  margin-bottom: 36px;
 }
-.btn_red {
+.btn_primary {
   background: #ea525c;
 }
 
-.btn_blue {
+.btn_secondary {
   background: #37406c;
 }
